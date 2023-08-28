@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .box{
+            font-size: 74px;
+            background-color: white;
+            color: black;
+            text-align: center;
+            color: green;
+            display: none;
+        }
+        @media (max-width:300px){
+            #box-1{
+                display: block;
+                background-color: rgb(47, 50, 50);
+            }
+        }
+
+    
+        @media (min-width: 500px) and  (max-width:800px){
+            #box-2{
+                display: block;
+                background-color: rgb(70, 54, 86);
+            }
+        }
+
+        @media (min-width:800px) and (max-width:1000px){
+            #box-3{
+                display: block;
+                background-color: rgb(40, 39, 42);
+            }
+        }
+        @media (min-width:1000px){
+            #box-4{
+                display: block;
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">Mai ek iphone hu</div>
+    <div class="box" id="box-2">Mai ek tablet hu</div>
+    <div class="box" id="box-3">Mai ek personal computer hu</div>
+    <div class="box" id="box-4">Mai ek personal computer hu I am very secure</div>
+</body>
+</html>

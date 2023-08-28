@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Form Validation Example</h1>
+    </header>
+    <main>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" onblur="validateName()" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </main>
+
+    <script>
+        function validateName() {
+            const nameInput = document.getElementById('name');
+            const nameValue = nameInput.value.trim();
+            if (nameValue === '') {
+                nameInput.setCustomValidity('Name cannot be empty');
+            } else {
+                nameInput.setCustomValidity('');
+            }
+        }
+
+        function submitForm() {
+            // This is just a sample function to show the form submission without a server.
+            // You can replace it with your desired functionality (e.g., displaying an alert).
+            const formData = new FormData(document.querySelector('form'));
+            let formValues = '';
+            formData.forEach((value, key) => {
+                formValues += `${key}: ${value}\n`;
+            });
+            alert("Form submitted with the following values:\n\n" + formValues);
+        }
+    </script>
+</body>
+</html>

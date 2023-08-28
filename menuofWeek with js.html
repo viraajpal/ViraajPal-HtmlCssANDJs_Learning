@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu of the week</title>
+</head>
+<style>
+    .container {
+        text-align: center;
+        border: 2px solid black;
+        /* margin: 40px; */
+        padding: 40px;
+    }
+
+    .container3{
+        margin: 20px auto; /* Center-align the table */
+        border: 1px solid black;
+
+    }
+    
+</style>
+
+<body>
+    <div class="container">
+        <h2>--Menu of the week--</h2>
+        <select name="menu" id="menu" onchange="menu()">
+            <option value="">--Select the day first--</option>
+            <option value="Sunday">Sunday</optiion>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value=Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+        </select>
+    </div>
+    <br>
+
+    <table class="container3" width="100%" border="1px" id="sunday" style="display: none;">
+        <tr>
+            <td width="25%">
+                <h2>Break Fast</h2>
+                <ul>
+                    <li>abcabcabcabcabc</li>
+                    <li>bcd</li>
+                    <li>bcd</li>
+                    <li>bcd</li>
+                    <li>bcd</li>
+                    <li>bcd</li>
+                </ul>
+            </td>
+            <td width="25%">
+                <h2>Lunch</h2>
+                <ul>
+                    <li>abc</li>
+                    <li>bcd</li>
+                    <li>bcd</li>
+                    <li>bcd</li>
+                    <li>bcd</li>
+                    <li>bcd</li>
+                </ul>
+            </td>
+            <td width="25%">
+                <h2>Snacks</h2>
+                <ul>
+                    <li>abc</li>
+                    <li>bcd</li>
+                    <li>bcd</li>
+                    <li>bcd</li>
+                    <li>bcd</li>
+                    <li>bcd</li>
+                </ul>
+            </td>
+            <td width="25%">
+                <h2>Dinner</h2>
+                <ul>
+                    <li>abc</li>
+                    <li>bcd</li>
+                    <li>bcd</li>
+                    <li>bcd</li>
+                    <li>bcd</li>
+                    <li>bcd</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <table class="container3" id="monday" width="100%" border="1px" style="display: none;" onchange="menu()">
+        <tr>
+            <td width="25%">
+                <ul>
+                    <h2>Break Fast</h2>
+                    <li>Ladifinger</li>
+                    <li>Ladifinger</li>
+                    <li>Ladifinger</li>
+                    <li>Ladifinger</li>
+                    <li>Ladifinger</li>
+                    <li>Ladifinger</li>
+                    <li>Ladifinger</li>
+                </ul>
+            </td>
+            <td width="25%">
+                <ul>
+                    <h2>Lunch</h2>
+                    <li>Potato</li>
+                    <li>Potato</li>
+                    <li>Potato</li>
+                    <li>Potato</li>
+                    <li>Potato</li>
+                    <li>Potato</li>
+                    <li>Potato</li>
+                </ul>
+            </td>
+            <td width="25%">
+                <ul>
+                    <h2>Snacks</h2>
+                    <li>Tomato</li>
+                    <li>Tomato</li>
+                    <li>Tomato</li>
+                    <li>Tomato</li>
+                    <li>Tomato</li>
+                    <li>Tomato</li>
+                    <li>Tomato</li>
+                </ul>
+            </td>
+            <td width="25%">
+                <ul>
+                    <h2>Dinner</h2>
+                    <li>Cabbage</li>
+                    <li>Cabbage</li>
+                    <li>Cabbage</li>
+                    <li>Cabbage</li>
+                    <li>Cabbage</li>
+                    <li>Cabbage</li>
+                    <li>Cabbage</li>
+                </ul>
+            </td>
+
+        </tr>
+    </table>
+
+    <table class="container3" id="tuesday" width="100%" border="1px" style="display: none;" onchange="menu()">
+        <tr>
+            <td width="25%">
+                <ul>
+                    <h2>Break Fast</h2>
+                    <li>Capsicum</li>
+                    <li>Capsicum</li>
+                    <li>Capsicum</li>
+                    <li>Capsicum</li>
+                    <li>Capsicum</li>
+                    <li>Capsicum</li>
+                    <li>Capsicum</li>
+                </ul>
+            </td>
+            <td width="25%">
+                <ul>
+                    <h2>Lunch</h2>
+                    <li>Bringle</li>
+                    <li>Bringle</li>
+                    <li>Bringle</li>
+                    <li>Bringle</li>
+                    <li>Bringle</li>
+                    <li>Bringle</li>
+                    <li>Bringle</li>
+                </ul>
+            </td>
+            <td width="25%">
+                <ul>
+                    <h2>Snacks</h2>
+                    <li>Raddish</li>
+                    <li>Raddish</li>
+                    <li>Raddish</li>
+                    <li>Raddish</li>
+                    <li>Raddish</li>
+                    <li>Raddish</li>
+                </ul>
+            </td>
+            <td width="25%">
+                <ul>
+                    <h2>Dinner</h2>
+                    <li>Crumble Egg</li>
+                    <li>Crumble Egg</li>
+                    <li>Crumble Egg</li>
+                    <li>Crumble Egg</li>
+                    <li>Crumble Egg</li>
+                    <li>Crumble Egg</li>
+                    <li>Crumble Egg</li>
+                </ul>
+            </td>
+
+        </tr>
+        <table class="container3" id="wednesday" width="100%" border="1px" style="display: none;" onchange="menu()">
+            <tr>
+                <td width="25%">
+                    <ul>
+                        <h2>Break Fast</h2>
+                        <li>Panner</li>
+                        <li>Panner</li>
+                        <li>Panner</li>
+                        <li>Panner</li>
+                        <li>Panner</li>
+                        <li>Panner</li>
+                        <li>Panner</li>
+                    </ul>
+                </td>
+                <td width="25%">
+                    <ul>
+                        <h2>Lunch</h2>
+                        <li>Chikeen</li>
+                        <li>Chikeen</li>
+                        <li>Chikeen</li>
+                        <li>Chikeen</li>
+                        <li>Chikeen</li>
+                        <li>Chikeen</li>
+                        <li>Chikeen</li>
+                    </ul>
+                </td>
+                <td width="25%">
+                    <ul>
+                        <h2>Snacks</h2>
+                        <li>Handi Paneer</li>
+                        <li>Handi Paneer</li>
+                        <li>Handi Paneer</li>
+                        <li>Handi Paneer</li>
+                        <li>Handi Paneer</li>
+                        <li>Handi Paneer</li>
+                        <li>Handi Paneer</li>
+                    </ul>
+                </td>
+                <td width="25%">
+                    <ul>
+                        <h2>Dinner</h2>
+                        Handi Cheeken</li>
+                        <li>Handi Cheeken</li>
+                        <li>Handi Cheeken</li>
+                        <li>Handi Cheeken</li>
+                        <li>Handi Cheeken</li>
+                        <li>Handi Cheeken</li>
+                        <li>Handi Cheeken</li>
+                    </ul>
+                </td>
+
+            </tr>
+            <table class="container3" id="thursday" width="100%" border="1px" style="display: none;" onchange="menu()">
+                <tr>
+                    <td width="25%">
+                        <ul>
+                            <h2>Break Fast</h2>
+                            <li>Handi Cheeken</li>
+                            <li>Handi Cheeken</li>
+                            <li>Handi Cheeken</li>
+                            <li>Handi Cheeken</li>
+                            <li>Handi Cheeken</li>
+                            <li>Handi Cheeken</li>
+                            <li>Handi Cheeken</li>
+                        </ul>
+                    </td>
+                    <td width="25%">
+                        <ul>
+                            <h2>Lunch</h2>
+                            <li>Handi Cheeken</li>
+                            <li>Handi Cheeken</li>
+                            <li>Handi Cheeken</li>
+                            <li>Handi Cheeken</li>
+                            <li>Handi Cheeken</li>
+                            <li>Handi Cheeken</li>
+                        </ul>
+                    </td>
+                    <td width="25%">
+                        <ul>
+                            <h2>Snacks</h2>
+                            <li>Handi Cheeken</li>
+                            <li>Handi Cheeken</li>
+                            <li>Handi Cheeken</li>
+                            <li>Handi Cheeken</li>
+                            <li>Handi Cheeken</li>
+                            <li>Handi Cheeken</li>
+                            <li>Handi Cheeken</li>
+                        </ul>
+                    </td>
+                    <td width="25%">
+                        <ul>
+                            <h2>Dinner</h2>
+                            <li>Handi Cheeken</li>
+                            <li>Handi Cheeken</li>
+                            <li>Handi Cheeken</li>
+                            <li>Handi Cheeken</li>
+                            <li>Handi Cheeken</li>
+                            <li>Handi Cheeken</li>
+                            <li>Handi Cheeken</li>
+                        </ul>
+                    </td>
+
+                </tr>
+            </table>
+            <table class="container3" id="friday" width="100%" border="1px" style="display: none;" onchange="menu()">
+                <tr>
+                    <td width="25%">
+                        <ul>
+                            <h2>Break Fast</h2>
+                            <li>Mushroom</li>
+                            <li>Mushroom</li>
+                            <li>Mushroom</li>
+                            <li>Mushroom</li>
+                            <li>Mushroom</li>
+                            <li>Mushroom</li>
+                            <li>Mushroom</li>
+                        </ul>
+                    </td>
+                    <td width="25%">
+                        <ul>
+                            <h2>Lunch</h2>
+                            <li>Mushroom</li>
+                            <li>Mushroom</li>
+                            <li>Mushroom</li>
+                            <li>Mushroom</li>
+                            <li>Mushroom</li>
+                            <li>Mushroom</li>
+                            <li>Mushroom</li>
+                        </ul>
+                    </td>
+                    <td width="25%">
+                        <ul>
+                            <h2>Snacks</h2>
+                            <li>Mushroom</li>
+                            <li>Mushroom</li>
+                            <li>Mushroom</li>
+                            <li>Mushroom</li>
+                            <li>Mushroom</li>
+                            <li>Mushroom</li>
+                            <li>Mushroom</li>
+                        </ul>
+                    </td>
+                    <td width="25%">
+                        <ul>
+                            <h2>Dinner</h2>
+                            <li>Mushroom</li>
+                            <li>Mushroom</li>
+                            <li>Mushroom</li>
+                            <li>Mushroom</li>
+                            <li>Mushroom</li>
+                            <li>Mushroom</li>
+                            <li>Mushroom</li>
+                        </ul>
+                    </td>
+
+                </tr>
+            </table>
+            <table class="container3" id="saturday" width="100%" border="1px" style="display: none;" onchange="menu()">
+                <tr>
+                    <td width="25%">
+                        <ul>
+                            <h2>Break Fast</h2>
+                            <li>Bringle</li>
+                            <li>Bringle</li>
+                            <li>Bringle</li>
+                            <li>Bringle</li>
+                            <li>Bringle</li>
+                            <li>Bringle</li>
+                            <li>Bringle</li>
+                        </ul>
+                    </td>
+                    <td width="25%">
+                        <ul>
+                            <h2>Lunch</h2>
+                            <li>Bringle</li>
+                            <li>Bringle</li>
+                            <li>Bringle</li>
+                            <li>Bringle</li>
+                            <li>Bringle</li>
+                            <li>Bringle</li>
+                            <li>Bringle</li>
+                        </ul>
+                    </td>
+                    <td width="25%">
+                        <ul>
+                            <h2>Snacks</h2>
+                            <li>Bringle</li>
+                            <li>Bringle</li>
+                            <li>Bringle</li>
+                            <li>Bringle</li>
+                            <li>Bringle</li>
+                            <li>Bringle</li>
+                            <li>Bringle</li>
+                        </ul>
+                    </td>
+                    <td width="25%">
+                        <ul>
+                            <h2>Dinner</h2>
+                            <li>Bringle</li>
+                            <li>Bringle</li>
+                            <li>Bringle</li>
+                            <li>Bringle</li>
+                            <li>Bringle</li>
+                            <li>Bringle</li>
+                            <li>Bringle</li>
+                        </ul>
+                    </td>
+
+                </tr>
+            </table>
+
+            <script>
+                function menu() {
+                    m = document.getElementById('menu').value;
+
+                    // if(menu == ""){
+                    //     alert('Please select the day first')
+                    // }
+
+                    if (m == "Sunday") {
+                        document.getElementById('sunday').style.display = 'block';
+                        document.getElementById('monday').style.display = 'none';
+                        document.getElementById('tuesday').style.display = 'none';
+                        document.getElementById('wednesday').style.display = 'none';
+                        document.getElementById('thursday').style.display = 'none';
+                        document.getElementById('friday').style.display = 'none';
+                        document.getElementById('saturday').style.display = 'none';
+                    }
+                    else if (m == "Monday") {
+                        document.getElementById('sunday').style.display = 'none';
+                        document.getElementById('monday').style.display = 'block';
+                        document.getElementById('tuesday').style.display = 'none';
+                        document.getElementById('wednesday').style.display = 'none';
+                        document.getElementById('thursday').style.display = 'none';
+                        document.getElementById('friday').style.display = 'none';
+                        document.getElementById('saturday').style.display = 'none';
+                    }
+                    else if (m == "Tuesday") {
+                        document.getElementById('sunday').style.display = 'none';
+                        document.getElementById('monday').style.display = 'none';
+                        document.getElementById('tuesday').style.display = 'block';
+                        document.getElementById('wednesday').style.display = 'none';
+                        document.getElementById('thursday').style.display = 'none';
+                        document.getElementById('friday').style.display = 'none';
+                        document.getElementById('saturday').style.display = 'none';
+                    }
+                    else if (m == "Wednesday") {
+                        document.getElementById('sunday').style.display = 'none';
+                        document.getElementById('monday').style.display = 'none';
+                        document.getElementById('tuesday').style.display = 'none';
+                        document.getElementById('wednesday').style.display = 'block';
+                        document.getElementById('thursday').style.display = 'none';
+                        document.getElementById('friday').style.display = 'none';
+                        document.getElementById('saturday').style.display = 'none';
+                    }
+                    else if (m == "Thursday") {
+                        document.getElementById('sunday').style.display = 'none';
+                        document.getElementById('monday').style.display = 'none';
+                        document.getElementById('tuesday').style.display = 'none';
+                        document.getElementById('wednesday').style.display = 'none';
+                        document.getElementById('thursday').style.display = 'block';
+                        document.getElementById('friday').style.display = 'none';
+                        document.getElementById('saturday').style.display = 'none';
+                    }
+                    else if (m == "Friday") {
+                        document.getElementById('sunday').style.display = 'none';
+                        document.getElementById('monday').style.display = 'none';
+                        document.getElementById('tuesday').style.display = 'none';
+                        document.getElementById('wednesday').style.display = 'none';
+                        document.getElementById('thursday').style.display = 'none';
+                        document.getElementById('friday').style.display = 'block';
+                        document.getElementById('saturday').style.display = 'none';
+                    }
+                    else if (m == "Saturday") {
+                        document.getElementById('sunday').style.display = 'none';
+                        document.getElementById('monday').style.display = 'none';
+                        document.getElementById('tuesday').style.display = 'none';
+                        document.getElementById('wednesday').style.display = 'none';
+                        document.getElementById('thursday').style.display = 'none';
+                        document.getElementById('friday').style.display = 'none';
+                        document.getElementById('saturday').style.display = 'block';
+                    }
+                }
+            </script>
+</body>
+
+</html>

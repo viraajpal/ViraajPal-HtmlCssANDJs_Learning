@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes And Animations</title>
+</head>
+<style>
+    .container{
+        background-color: yellowgreen;
+    }
+    .box{
+        background-color: green;
+        width: 250px;
+        height: 250px;
+        position: relative;
+        animation-name: Viraaj1;
+        animation-duration: 1s;
+        animation-iteration-count: 3;
+        animation-fill-mode: alternative;
+        animation-timing-function: ease-in;
+        animation-direction: reverse;
+        /* animation: Viraaj1 1s ease-in-out 1s 8 forwards alternate-reverse; */
+    }
+    @keyframes Viraaj1 {
+        from{
+            width: 200px;
+        }
+        to{
+            width: 1400px;
+        }
+    } 
+
+</style>
+<body>
+    <div class="container"></div>
+    <div class="box"></div>
+    This is a box!
+</body>
+</html>

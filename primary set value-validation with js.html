@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+function table()
+{
+    //a=document.f1.num1.value;
+    // a=parseInt(document.f1.num1.value);
+    // b=parseInt(document.f1.num2.value);
+   // c=a*b;
+    //document.f1.total.value=c;
+    //document.write(a);
+
+    /*for(i=1;i<=10;i++)
+    {
+        document.write(i*a+"<br>")
+    }*/
+
+
+    a=document.f1.num1.value;
+    b=document.f1.num2.value;
+    if(a=="amit" && b=="abhay")
+    {
+       // document.getElementById('msg').innerHTML="<span style='color:green;'>valid user</span>";
+        document.location.href="G2_tutorial2.html";
+    }
+    else
+    {
+        document.getElementById('msg').innerHTML="<span style='color:red;'>bhaag jao</span>";
+    }
+
+}
+
+    </script>
+</head>
+<body>
+    <form name="f1">
+            User Name: <input type="text" name="num1" id="num1">
+            <br><br>
+            Password: <input type="text" name="num2" id="num2">
+            
+            <br>
+            <br>
+            <input type="button" name="btn" value="Continue" onclick="table()">
+
+            <div id="msg"></div>
+    </form>
+
+</body>
+</html>

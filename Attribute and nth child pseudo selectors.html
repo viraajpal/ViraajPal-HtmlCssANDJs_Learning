@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selectors</title>
+    <style>
+        .container {
+
+            display: block;
+            margin: auto;
+            width: 233px;
+        }
+
+        input {
+            display: block;
+        }
+
+        input[type='text'] {
+            padding: 23px;
+            border: 2px solid red;
+        }
+        li:nth-child(3){
+            color: blue;
+        }
+        li:nth-child(2n+0){
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=container">
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter Your Name">
+            <input type="passward" placeholder="Enter Your Passward">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item1" id="item1">item1</li>
+            <li class="item2" id="item2">item2</li>
+            <li class="item3" id="item3">item3</li>
+            <li class="item4" id="item4">item4</li>
+            <li class="item5" id="item5">item5</li>
+            <li class="item6" id="item6">item6</li>
+            <li class="item7" id="item7">item7</li>
+            <li class="item8" id="item8">item8</li>
+            <li class="item9" id="item9">item9</li>
+            <li class="item10" id="item10">item10</li>
+        </ul>
+    </div>
+</body>
+
+</html>

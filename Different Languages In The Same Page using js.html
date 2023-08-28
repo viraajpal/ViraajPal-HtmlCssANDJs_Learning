@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Different Languages In The Same Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #content {
+            margin-top: 20px;
+        }
+
+        .link-content {
+            display: none;
+        }
+
+        .link-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Different Languages In The Same Page</h1>
+
+    <table>
+        <tr>
+            <th>Html</th>
+            <th>Content</th>
+        </tr>
+        <tr>
+            <td><a href="#Html">Html</a></td>
+            <td>
+                <div id="Html" class="link-content">
+                    <h2>HTML</h2>
+                    <p> HTML (Hypertext Markup Language) is the standard markup language used for creating web pages and applications.</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="#css">css</a></td>
+            <td>
+                <div id="css" class="link-content">
+                    <h2>CSS</h2>
+                    <p> CSS (Cascading Style Sheets) is a style sheet language used to describe the presentation and visual formatting of a document written in HTML or XML.</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="#JavaScript">JavaScript</a></td>
+            <td>
+                <div id="JavaScript" class="link-content">
+                    <h2>JavaScript</h2>
+                    <p> JavaScript is a high-level, interpreted programming language primarily used for adding interactivity and dynamic behavior to web pages.</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="#React">React</a></td>
+            <td>
+                <div id="React" class="link-content">
+                <h2>React</h2>
+                <p> React is a JavaScript library for building user interfaces, specifically for developing reusable and interactive UI components.</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="#Node.js">Node.js</a></td>
+            <td>
+                <div id="Node.js" class="link-content">
+                <h2>Node.js</h2>
+                <p>Node.js is a server-side runtime environment that allows developers to build scalable and high-performance web applications using JavaScript.
+                    It was developed by Facebook and is widely used for creating modern and efficient web applications. React follows a component-based 
+                    architecture, where the UI is broken down into reusable components that manage their own state and can be composed together to build 
+                    complex user interfaces.
+
+                    Here are some key aspects and concepts of React:
+                    
+                    Components: In React, UI components are the building blocks of the application. A component represents a reusable piece of the user interface, 
+                    which can be a small element like a button or a more complex entity like a form or a complete page. React encourages the composition of components, 
+                    where larger components are constructed by combining smaller ones.
+                    
+                    Virtual DOM: React utilizes a virtual DOM (Document Object Model), which is an abstraction of the actual HTML DOM. The virtual DOM allows React to 
+                    efficiently update and render the UI by calculating the minimum number of changes needed. When there is a change in the component's state, 
+                    React creates a new virtual DOM tree, compares it with the previous one, and then updates only the necessary parts of the actual DOM.
+                    
+                    JSX: React uses JSX (JavaScript XML) as a syntax extension. It allows developers to write HTML-like code directly within JavaScript, 
+                    which represents the structure and layout of the UI components. JSX is not a requirement for using React, but it greatly simplifies the creation and 
+                    composition of components
+                </p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="#Python">Python</a></td>
+            <td>
+                <div id="Python" class="link-content">
+                <h2>Python</h2>
+                <p>Python is a versatile and widely-used programming language known for its simplicity, readability, and extensive libraries and frameworks. 
+                   It was created by Guido van Rossum and first released in 1991.</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="#Java">Java</a></td>
+            <td>
+                <div id="Java" class="link-content">
+                <h2>Java</h2>
+                <p>Java is a widely used programming language that was developed by Sun Microsystems (now owned by Oracle) in the mid-1990s. 
+                   It is designed to be platform-independent, which means that Java programs can run on any operating system or platform that 
+                   has a Java Virtual Machine (JVM) installed.</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="#C++">C++</a></td>
+            <td>
+                <div id="C++" class="link-content">
+                <h2>C++</h2>
+                <p>C++ is a powerful and widely used programming language that was developed as an extension of the C programming language. 
+                   It was created by Bjarne Stroustrup in the late 1970s and has since become one of the most popular languages for system 
+                   programming, game development, and other performance-critical applications.</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="#PHP">PHP</a></td>
+            <td>
+                <div id="PHP" class="link-content">
+                <h2>PHP</h2>
+                <p>PHP (Hypertext Preprocessor) is a popular server-side scripting language that is widely used for web development. 
+                   It was originally created by Rasmus Lerdorf in 1994 and has since evolved into a robust and versatile language. </p>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        const links = document.querySelectorAll('a');
+
+        links.forEach((link) => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                const targetId = link.getAttribute('href').substring(1);
+                const targetContent = document.getElementById(targetId);
+                const activeContent = document.querySelector('.link-content.active');
+5
+                if (activeContent) {
+                    activeContent.classList.remove('active');
+                }
+
+                targetContent.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

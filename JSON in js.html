@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSAON In Javascript</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is JSON tutorial</h1>
+    </div>
+    <script>
+        let jsonobj = {
+            name: "viraaj",
+            channel: "cccccc",
+            friend: "SK",
+            food: "paneer"
+        }
+        console.log(jsonobj);
+        let myJsonstr = JSON.stringify(object);
+        console.log(myJsonstr);
+
+        myJsonstr = myJsonstr.replace("viraaj", "hhyf");
+        console.log(myJsonstr);
+
+        newJsonObj = JSON.parse(myJsonstr);
+        console.log(newJsonObj);
+        </script>    
+</body>
+</html>
